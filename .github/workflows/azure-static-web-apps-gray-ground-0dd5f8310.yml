@@ -20,6 +20,7 @@ jobs:
          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
          repo_token: ${{ secrets.GITHUB_TOKEN }}
          action: "upload"
-         app_location: "/"        # onde está o index.html
-         api_location: ""         # sem API
-         output_location: "."     # saída do build
+         app_location: "/"        
+         api_location: ""        
+         output_location: "."    
+
