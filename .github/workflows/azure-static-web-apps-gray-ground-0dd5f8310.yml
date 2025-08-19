@@ -17,10 +17,9 @@ jobs:
      - name: Build And Deploy
        uses: Azure/static-web-apps-deploy@v1
        with:
-         azure_static_web_apps_api_token: ${{ secrets.fc97bcb164c12e33d2cf9d52d245b0d5490639ef3b4896e811160ba6f4b2bf1201-e9ff8231-1e7f-4123-98b4-b81f0894805a01003060dd5f8310 }}
-         repo_token: ${{ secrets.3d9a30bd-92ee-456b-b4a3-3ee9e5eb9b21 }}
+         azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
+         repo_token: ${{ secrets.GITHUB_TOKEN }}
          action: "upload"
          app_location: "/"        # onde está o index.html
-         api_location: "/"         # não tem API
+         api_location: ""         # sem API
          output_location: "."     # saída do build
-
